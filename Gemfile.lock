@@ -1,6 +1,5 @@
 GEM
   remote: https://rubygems.org/
-  remote: https://rails-assets.org/
   specs:
     CFPropertyList (2.3.2)
     actionmailer (4.0.1)
@@ -31,9 +30,6 @@ GEM
     autoprefixer-rails (6.3.6.2)
       execjs
     bcrypt (3.1.11)
-    bootstrap (4.0.0.alpha3)
-      autoprefixer-rails (>= 6.0.3)
-      sass (>= 3.4.19)
     bootstrap-sass (3.3.5.1)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.3.0)
@@ -290,7 +286,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap (~> 4.0.0.alpha3)
   bootstrap-sass (~> 3.3.5.1)
   carrierwave
   coffee-rails (~> 4.0.0)
