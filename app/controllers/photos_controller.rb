@@ -10,6 +10,6 @@ class PhotosController < ApplicationController
 	private
 
 	def comment_params
-		params.require(:photo).permit(:caption)
+		params.require(:photo).permit(:avatar, :caption)
 	end
 end
