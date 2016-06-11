@@ -74,7 +74,7 @@
 				<% end %>
 				<%= comment.message %>
 				<br /><br />
-				<small>&nbsp;&nbsp;<%= comment.user.email %></small>
+				<h6>&nbsp;&nbsp;<%= comment.user.email %></h6>
 			</blockquote>
 		</div>
 	<% end %>
@@ -96,7 +96,7 @@
       </div>
       <div class="modal-body">
 				<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
-					<%= f.input :avatar %>
+					<%= f.input :avatar, :label => 'Photo' %>
 					<%= f.input :caption %>
       </div>
       <div class="modal-footer">
@@ -113,7 +113,7 @@
 
 <!-- PHOTO DISPLAY -->
 <div class="col-xs-10 col-xs-offset-1">
-	<h1 class="white-header text-center">Photos</h1>
+	<h1 class="white-header text-center">Photos</h1><br />
 </div>
 <% @place.photos.each do |photo| %>
 	<div class="image-box col-xs-11 col-xs-offset-1 col-sm-4 col-sm-offset-1">
