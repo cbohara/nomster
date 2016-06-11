@@ -116,7 +116,7 @@
 	<h1 class="white-header text-center">Photos</h1><br />
 </div>
 <% @place.photos.each do |photo| %>
-	<div class="image-box col-xs-11 col-xs-offset-1 col-sm-5 col-sm-offset-1">
+	<div class="image-box col-xs-11 col-xs-offset-1 col-sm-4 col-sm-offset-1">
 	  <%= image_tag photo.avatar, :class => "img-responsive center-block" %><br />
 	  <div class="text-center">
 	  	<%= photo.caption %>

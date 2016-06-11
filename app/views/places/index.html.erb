@@ -46,25 +46,26 @@
 		<h1><%= link_to place.name, place_path(place) %></h1><br />
 		<h3><%= place.address %></h3><br />
 		<p><%= place.description %></p><br />
+
+  <% if place.comments.present? %>
+  <div class="col-xs-12">
+      <blockquote>
+        <% if place.comments.last.humanized_rating.present? %>
+          <b><%= place.comments.last.humanized_rating %></b>
+        <% end %>
+        <%= place.comments.last.message %>
+      </blockquote>
+    </div>
+  <% end %>
   <br /><br />
+  <div class="center-block">
   <% if place.photos.present? %>
 		<% if place.photos.last.present? %>
       <%= image_tag place.photos.last.avatar, :class => "img-responsive" %>
     <% end %>
-<% end %>
-
-<% if place.comments.present? %>
-	<div class="col-xs-12">
-    	<blockquote>
-      	<% if place.comments.last.humanized_rating.present? %>
-       	  <b><%= place.comments.last.humanized_rating %></b>
-       	<% end %>
-      	<%= place.comments.last.message %>
-    	</blockquote>
-  	</div>
-<% end %>
-
-	</div>
+  <% end %>
+  </div>
+</div>
 <% end %>
 <div class="clear"></div>
 <br />
