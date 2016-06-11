@@ -46,10 +46,6 @@
 		<h1><%= link_to place.name, place_path(place) %></h1><br />
 		<h3><%= place.address %></h3><br />
 		<p><%= place.description %></p><br />
-
-	<% if place.user.present? %>
-		<small><%= place.user.email %></small>
-	<% end %>
   <br /><br />
   <% if place.photos.present? %>
 		<% if place.photos.last.present? %>
