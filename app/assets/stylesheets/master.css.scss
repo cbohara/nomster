@@ -5,6 +5,16 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 }
 
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FA39D3;
+	text-decoration: none;
+}
+
 body {
 	background: url('/assets/food.png');
 	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
@@ -12,6 +22,10 @@ body {
 
 .clear {
 	clear: both;
+}
+
+.white-header {
+	color: white;
 }
 
 .navbar.navbar-inverse {
